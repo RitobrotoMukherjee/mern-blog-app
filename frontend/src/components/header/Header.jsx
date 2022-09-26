@@ -1,5 +1,5 @@
 import './header.css';
-import Avatar from '../assets/profile-photo.jpg';
+import Avatar from '../../assets/profile-photo.jpg';
 
 export default function Header() {
     return (
@@ -20,7 +20,7 @@ export default function Header() {
             </nav>
             <div className="HeaderRight">
                 <img className='Avatar' src={Avatar} alt="Avatar"  />
-                <i class="searchIcon fa-solid fa-magnifying-glass"></i>
+                <i className="searchIcon fa-solid fa-magnifying-glass"></i>
             </div>
         </header>
     )

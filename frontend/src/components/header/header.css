@@ -9,7 +9,8 @@
     font-family: 'Varela', sans-serif;
 }
 
-.HeaderLeft, .HeaderRight {
+.HeaderLeft,
+.HeaderRight {
     flex: 3;
     display: flex;
     align-items: center;
@@ -18,6 +19,37 @@
 
 .HeaderCenter {
     flex: 6;
+}
+
+.HeaderCenter::after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    height: 3px;
+    width: 50px;
+    background: rgb(238, 205, 164);
+    animation: line 3s 0.5s infinite linear;
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    50% {
+        left: 45%;
+        width: 25%;
+        opacity: 0.5;
+    }
+    75% {
+        left: 50%;
+        width: 9%;
+        opacity: 0.3;
+    }
+    100% {
+        left: 55%;
+        width: 0%;
+        opacity: 0;
+    }
 }
 
 .Avatar {

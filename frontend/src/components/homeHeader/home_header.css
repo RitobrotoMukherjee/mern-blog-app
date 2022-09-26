@@ -1,0 +1,30 @@
+.HomeCover {
+    margin-top: 3rem;
+}
+
+.HomeCoverTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora", serif;
+    color: #444;
+}
+
+.HomeCoverTitleSm {
+    position: absolute;
+    top: 13%;
+    font-size: 20px;
+}
+
+.HomeCoverTitleLg {
+    position: absolute;
+    top: 17%;
+    font-size: 100px;
+}
+
+.HomeCoverImg {
+    width: 100%;
+    height: 450px;
+    margin-top: 3.5rem;
+    object-fit: cover;
+}

@@ -1,5 +1,5 @@
 import './home.css';
-import HomeHeader from '../../homeHeader/HomeHeader';
+import HomeHeader from '../../components/homeHeader/HomeHeader';
 
 export default function Home() {
     return (
