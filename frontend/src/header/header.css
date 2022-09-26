@@ -1,0 +1,56 @@
+.Header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Varela', sans-serif;
+}
+
+.HeaderLeft, .HeaderRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderCenter {
+    flex: 6;
+}
+
+.Avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-icons {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    color: #444;
+}
+
+.NavList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.NavItems {
+    margin-right: 2rem;
+    cursor: pointer;
+    color: rgb(130, 126, 126);
+}
+
+.searchIcon {
+    margin-left: 0.75rem;
+    cursor: pointer;
+    color: #666;
+}
