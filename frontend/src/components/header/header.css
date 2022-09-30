@@ -7,6 +7,8 @@
     display: flex;
     align-items: center;
     font-family: 'Varela', sans-serif;
+    box-shadow: -10px 5px 6px #ccc;
+    z-index: 1;
 }
 
 .HeaderLeft,
@@ -19,37 +21,6 @@
 
 .HeaderCenter {
     flex: 6;
-}
-
-.HeaderCenter::after {
-    content: '';
-    position: absolute;
-    left: 30%;
-    height: 3px;
-    width: 50px;
-    background: rgb(238, 205, 164);
-    animation: line 3s 0.5s infinite linear;
-}
-
-@keyframes line {
-    0% {
-        width: 0%;
-    }
-    50% {
-        left: 45%;
-        width: 25%;
-        opacity: 0.5;
-    }
-    75% {
-        left: 50%;
-        width: 9%;
-        opacity: 0.3;
-    }
-    100% {
-        left: 55%;
-        width: 0%;
-        opacity: 0;
-    }
 }
 
 .Avatar {
@@ -76,9 +47,16 @@
 }
 
 .NavItems {
-    margin-right: 2rem;
+    margin-right: 3rem;
     cursor: pointer;
     color: rgb(130, 126, 126);
+    transition: all 0.5s;
+}
+
+.NavItems:hover {
+    border: 0.3rem outset rgb(181, 178, 178);
+    border-radius: 9px;
+    padding: 0.2rem;
 }
 
 .searchIcon {

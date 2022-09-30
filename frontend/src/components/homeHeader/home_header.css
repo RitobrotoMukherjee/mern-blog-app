@@ -16,6 +16,16 @@
     font-size: 20px;
 }
 
+.HomeCoverTitleSm::after {
+    content: '';
+    margin-top: 0.3rem;
+    display: block;
+    position: relative;
+    height: 3px;
+    background: rgb(238, 205, 164);
+    animation: line 2s infinite linear alternate;
+}
+
 .HomeCoverTitleLg {
     position: absolute;
     top: 17%;
@@ -27,4 +37,26 @@
     height: 450px;
     margin-top: 3.5rem;
     object-fit: cover;
+}
+
+@keyframes line {
+    0% {
+        left: 0%;
+        width: 0.5rem;
+    }
+
+    33% {
+        left: 33%;
+        width: 1rem;
+    }
+
+    66% {
+        left: 66%;
+        width: 1rem;
+    }
+
+    100% {
+        left: 99%;
+        width: 0.5rem;
+    }
 }
