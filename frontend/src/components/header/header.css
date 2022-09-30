@@ -54,7 +54,7 @@
 }
 
 .NavItems:hover {
-    border: 0.3rem outset rgb(181, 178, 178);
+    border: 0.2rem outset rgb(181, 178, 178, 0.5);
     border-radius: 9px;
     padding: 0.2rem;
 }

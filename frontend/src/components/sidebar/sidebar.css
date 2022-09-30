@@ -1,0 +1,10 @@
+.Sidebar {
+    flex: 1;
+}
+
+.SidebarImage {
+    width: 9em;
+    height: 12em;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
