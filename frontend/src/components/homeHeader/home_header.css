@@ -33,9 +33,9 @@
 }
 
 .HomeCoverImg {
-    width: 100%;
+    width: 100vw;
     height: 450px;
-    margin-top: 3.5rem;
+    margin-top: 6.9rem;
     object-fit: cover;
 }
 
