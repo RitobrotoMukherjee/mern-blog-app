@@ -1,18 +1,25 @@
 .HomeCover {
+    width: 100%;
     margin-top: 3rem;
-}
-
-.HomeCoverTitles {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.HomeCoverTitles {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: "Lora", serif;
     color: #444;
 }
 
 .HomeCoverTitleSm {
-    position: absolute;
-    top: 15%;
     font-size: 20px;
 }
 
@@ -27,16 +34,19 @@
 }
 
 .HomeCoverTitleLg {
-    position: absolute;
-    top: 18.5%;
     font-size: 100px;
 }
 
 .HomeCoverImg {
-    width: 100vw;
-    height: 450px;
-    margin-top: 6.9rem;
-    object-fit: cover;
+    width: 100%;
+    margin-top: 8rem;
+    overflow: hidden;
+}
+
+.HomeCoverImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 @keyframes line {
@@ -58,5 +68,37 @@
     100% {
         left: 95%;
         width: 0.5rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .HomeCoverTitles {
+        left: 35%;
+    }
+
+    .HomeCoverImg {
+        margin-top: 6em;
+    }
+
+    .HomeCoverTitleLg {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .HomeCoverImg {
+        margin-top: 2.5em;
+    }
+
+    .HomeCoverTitles {
+        left: 33%;
+    }
+
+    .HomeCoverTitleSm {
+        display: none;
+    }
+
+    .HomeCoverTitleLg {
+        font-size: 50px;
     }
 }

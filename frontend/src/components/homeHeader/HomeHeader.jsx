@@ -7,11 +7,12 @@ export default function HomeHeader() {
                 <span className="HomeCoverTitleSm">React & Node</span>
                 <span className="HomeCoverTitleLg">BLOG</span>
             </div>
-            <img
-                className="HomeCoverImg"
-                src="https://visualwilderness.com/wp-content/uploads/2015/11/Fiji_8B0A9727-845x321.jpg"
-                alt="Home Cover"
-            />
+            <div className="HomeCoverImg">
+                <img
+                    src="https://visualwilderness.com/wp-content/uploads/2015/11/Fiji_8B0A9727-845x321.jpg"
+                    alt="Home Cover"
+                />
+            </div>
         </div>
     )
 }

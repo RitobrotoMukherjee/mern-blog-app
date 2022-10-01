@@ -64,3 +64,9 @@
     cursor: pointer;
     color: #666;
 }
+
+@media (max-width: 760px) {
+    .Header {
+        width: 100%;
+    }
+}
