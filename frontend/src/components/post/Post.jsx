@@ -2,22 +2,26 @@ import React from 'react';
 import PropType from 'prop-types';
 import './post.css';
 
-export default function Post (details) {
+export default function Post(details) {
 
     const { id, image, title, description, categories } = details;
 
     return (
         <div id={id} className="Post">
-            <h6>{title}</h6>
-            <img src={image} />
-            <p>{description}</p>
-            <ul>
-                {categories.map(category => 
-                    <li key={category}>
-                        {category}
-                    </li>
-                )}
-            </ul>
+            <div className="PostImageHolder">
+                <img src={image} alt={title} />
+            </div>
+            <div className="PostInfo">
+                <ul className='PostCategories'>
+                    {categories.map(category =>
+                        <li className='PostCategoryItems' key={category}>
+                            {category}
+                        </li>
+                    )}
+                </ul>
+                <h3 className='PostTitle'>{title}</h3>
+                <p>{description}</p>
+            </div>
         </div>
     );
 }
