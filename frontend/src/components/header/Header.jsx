@@ -1,3 +1,4 @@
+import React from 'react';
 import './header.css';
 import Avatar from '../../assets/profile-photo.jpg';
 

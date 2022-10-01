@@ -1,3 +1,4 @@
+import React from 'react'
 import './home_header.css'
 
 export default function HomeHeader() {
