@@ -1,24 +1,26 @@
 .Post {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem 0 2.5rem 0;
-    max-height: 150px;
+    margin: 1.5rem 0;
+    gap: 1em;
 }
 
 .PostImageHolder {
-    flex: 1 1 25%;
-    overflow: hidden;
-    border-radius: 6px;
+    width: 150px;
+    height: 150px;
+    flex: 1;
 }
 
 .PostImageHolder > img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 1em;
 }
 
 .PostInfo {
-    flex: 3 0 60%;
+    flex: 3;
     margin-left: 1em;
     display: flex;
     flex-direction: column;
@@ -27,11 +29,29 @@
 
 .PostCategories {
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
     margin-bottom: 1.2em;
 }
 
 .PostCategoryItems {
-    display: inline-block;
-    margin-right: 1em;
-    width: 25%;
+    flex: 1;
+}
+
+@media (max-width: 550px) {
+    .Post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PostImageHolder {
+        flex: 1;
+    }
+
+    .PostInfo {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
 }
