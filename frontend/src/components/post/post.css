@@ -41,8 +41,14 @@
 
 @media (max-width: 550px) {
     .Post {
+        padding-bottom: 1em;
         flex-direction: column;
         align-items: center;
+        border-bottom: 0.06em solid #a7a4;
+    }
+
+    .Post:last-child {
+        border-bottom: none;
     }
 
     .PostImageHolder {
