@@ -1,0 +1,104 @@
+.HomeCover {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.HomeCoverTitles {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora", serif;
+    color: #444;
+}
+
+.HomeCoverTitleSm {
+    font-size: 20px;
+}
+
+.HomeCoverTitleSm::after {
+    content: '';
+    margin-top: 0.2rem;
+    display: block;
+    position: relative;
+    height: 3px;
+    background: rgb(238, 205, 164);
+    animation: line 2s infinite linear alternate;
+}
+
+.HomeCoverTitleLg {
+    font-size: 100px;
+}
+
+.HomeCoverImg {
+    width: 100%;
+    margin-top: 8rem;
+    overflow: hidden;
+}
+
+.HomeCoverImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@keyframes line {
+    0% {
+        left: 0%;
+        width: 0.5rem;
+    }
+
+    33% {
+        left: 33%;
+        width: 1rem;
+    }
+
+    66% {
+        left: 66%;
+        width: 1rem;
+    }
+
+    100% {
+        left: 95%;
+        width: 0.5rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .HomeCoverTitles {
+        left: 35%;
+    }
+
+    .HomeCoverImg {
+        margin-top: 6em;
+    }
+
+    .HomeCoverTitleLg {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .HomeCoverImg {
+        margin-top: 2.5em;
+    }
+
+    .HomeCoverTitles {
+        left: 33%;
+    }
+
+    .HomeCoverTitleSm {
+        display: none;
+    }
+
+    .HomeCoverTitleLg {
+        font-size: 50px;
+    }
+}

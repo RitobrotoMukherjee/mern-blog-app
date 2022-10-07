@@ -1,0 +1,29 @@
+footer {
+    padding: 1em;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: blueviolet;
+}
+
+.copyright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright > a {
+    text-decoration: none;
+}
+
+.copyright > a:active {
+    color: brown;
+}
+
+@media (max-width: 410px) {
+    footer {
+        width: 100%;
+    }
+}

@@ -13,8 +13,9 @@
 
 - **`git clone https://github.com/RitobrotoMukherjee/mern-blog-app.git`**
 - **`cd mern-blog-app`**
+- **`cd frontend`**
 - **`npm i`**
-- **`npm run serve`**
+- **`npm run start`**
 
 To get a local copy up and running follow these simple example steps.
 
